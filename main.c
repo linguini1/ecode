@@ -213,10 +213,10 @@ int main(int argc, char **argv) {
   /* Handle invalid errors */
 
   if (errcode > MAX_CODE) {
-    fprintf(stderr, "%d ? ?\n", errcode);
+    fprintf(stderr, "%d ? Unknown error code\n", errcode);
     return EXIT_FAILURE;
   } else if (errcode < 0) {
-    fprintf(stderr, "? %s ?\n", argv[1]);
+    fprintf(stderr, "? %s Unknown error name\n", argv[1]);
     return EXIT_FAILURE;
   }
 
