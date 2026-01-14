@@ -1,0 +1,20 @@
+ecode v0.0.0
+
+DESCRIPTION:
+    Very simple program that outputs the name of the error associated with an
+    error code and its description. Vice-versa, the name of the error code can
+    be used to fetch its error code and description.
+
+EXAMPLES:
+    $ ecode 12
+    12 ENOMEM Out of memory
+
+    $ ecode EFAULT
+    14 EFAULT Bad address
+
+USAGE:
+    ecode [--help] <code|name>
+
+ARGUMENTS:
+    code        The error code numerical value to lookup.
+    name        The error code string name to lookup.
